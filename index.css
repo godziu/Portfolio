@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   margin: 0 auto; }
 
@@ -110,7 +113,7 @@ nav {
         cursor: pointer; }
 
 .main {
-  background-image: url(img/header.png);
+  background-image: url(img/header.jpeg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -118,30 +121,36 @@ nav {
   margin: auto; }
   .main .slogan {
     position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-30%, -50%); }
+    width: 100%;
+    margin-top: 200px;
+    text-align: center; }
     .main .slogan p {
       font-size: 50px;
-      text-align: center;
       color: #fff;
       font-family: 'Amiri', serif;
-      margin: 0; }
-  .main .jumbotron {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    .main .jumbotron button {
+      margin: 0;
+      text-align: center; }
+    .main .slogan button {
       height: 60px;
       width: 200px;
       font-size: 30px;
       border-radius: 15px;
       cursor: pointer;
-      transition: 0.6s; }
-      .main .jumbotron button:hover {
-        background-color: #03112c;
+      transition: 0.6s;
+      margin-top: 100px; }
+      .main .slogan button:hover {
         color: #fff;
-        border: 0px; }
+        border: 0px;
+        background-color: inherit; }
+
+.about {
+  background-image: url(img/header.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin: auto; }
+  .about p {
+    margin: 0; }
 
 /*# sourceMappingURL=index.css.map */
