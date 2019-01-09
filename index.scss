@@ -42,21 +42,27 @@ body {
 	min-height: 1px;
 	padding: 0px;
 }
+
+
+
     /*nav section*/
 
 nav {
-
+  height: 47px;
+  background-color: #03112c;
+  position: fixed;
+  top: 0px;
+  width: 100%;
   ul {
     position: static;
     top: 0;
-    width: 100%;
     padding: 0;
     margin: 0;
 
       li {
         display: inline-block;
         float: right;
-        margin-top: 10px;
+        margin: 10px;
         a {
           text-decoration: none;
           color: white;
@@ -76,7 +82,7 @@ nav {
   background-size: cover;
   height: 100vh;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   .slogan {
     position: absolute;
     top: 30%;
@@ -88,6 +94,25 @@ nav {
       color: #fff;
       font-family: 'Amiri', serif;
       margin: 0;
+    }
+  }
+  .jumbotron {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    button {
+      height: 60px;
+      width: 200px;
+      font-size: 30px;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: 0.6s;
+      &:hover {
+        background-color: #03112c;
+        color: #fff;
+        border: 0px;
+      }
     }
   }
 }
