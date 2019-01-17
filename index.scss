@@ -153,3 +153,29 @@ nav {
     cursor: pointer;
   }
 }
+
+//contact
+
+.contact {
+  background-image: $background;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  div {
+		text-align: center;
+		height: 100%;
+		position: relative;
+		i {
+			width: 130px;
+			height: 130px;
+			text-align: center;
+			color: #fff;
+			font-size: 100px;
+			position: absolute;
+			top: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
