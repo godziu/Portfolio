@@ -94,10 +94,9 @@ nav {
   background-color: #03112c;
   position: fixed;
   top: 0px;
-  width: 100%; }
+  width: 100%;
+  z-index: 100; }
   nav ul {
-    position: static;
-    top: 0;
     padding: 0;
     margin: 0; }
     nav ul li {
@@ -117,31 +116,35 @@ nav {
   background-position: center;
   background-size: cover;
   height: 100vh;
-  width: 100%;
-  margin: auto; }
+  width: 100%; }
   .main .slogan {
-    position: absolute;
     width: 100%;
-    margin-top: 200px;
-    text-align: center; }
+    text-align: center;
+    margin-top: 47px; }
     .main .slogan p {
-      font-size: 50px;
+      font-size: 4vw;
       color: #fff;
-      font-family: 'Amiri', serif;
+      font-family: 'Charm', cursive;
+      text-align: center;
       margin: 0;
-      text-align: center; }
+      padding-top: 220px;
+      line-height: 100px; }
     .main .slogan button {
       height: 60px;
       width: 200px;
       font-size: 30px;
       border-radius: 15px;
       cursor: pointer;
-      transition: 0.6s;
+      transition: 0.4s;
       margin-top: 100px; }
       .main .slogan button:hover {
-        color: #fff;
         border: 0px;
         background-color: inherit; }
+      .main .slogan button a {
+        text-decoration: none;
+        color: black; }
+        .main .slogan button a:hover {
+          color: #fff; }
 
 .about {
   background-image: url(img/header.jpeg);
@@ -150,7 +153,25 @@ nav {
   height: 100vh;
   width: 100%;
   margin: auto; }
-  .about p {
-    margin: 0; }
+  .about .about-text {
+    color: #fff;
+    margin-top: 150px;
+    font-size: 25px;
+    line-height: 1.6;
+    padding: 30px;
+    text-align: center; }
+
+.projects {
+  background-image: url(img/header.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin: auto; }
+  .projects img {
+    height: 250px;
+    width: 300px;
+    margin: 125px 0 0 50px;
+    cursor: pointer; }
 
 /*# sourceMappingURL=index.css.map */
