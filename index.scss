@@ -99,8 +99,8 @@ nav {
       line-height: 100px;
     }
     button {
-      height: 60px;
-      width: 200px;
+      height: 3vw;
+      width: 12vw;
       font-size: 30px;
       border-radius: 15px;
       cursor: pointer;
@@ -109,6 +109,7 @@ nav {
         &:hover {
           border: 0px;
           background-color: inherit;
+					color: #fff;
       }
       a {
         text-decoration: none;

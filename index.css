@@ -130,8 +130,8 @@ nav {
       padding-top: 220px;
       line-height: 100px; }
     .main .slogan button {
-      height: 60px;
-      width: 200px;
+      height: 3vw;
+      width: 12vw;
       font-size: 30px;
       border-radius: 15px;
       cursor: pointer;
@@ -139,7 +139,8 @@ nav {
       margin-top: 100px; }
       .main .slogan button:hover {
         border: 0px;
-        background-color: inherit; }
+        background-color: inherit;
+        color: #fff; }
       .main .slogan button a {
         text-decoration: none;
         color: black; }
