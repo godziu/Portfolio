@@ -100,7 +100,7 @@ nav {
     }
     button {
       height: 3vw;
-      width: 12vw;
+      width: 14vw;
       font-size: 30px;
       border-radius: 15px;
       cursor: pointer;
@@ -112,6 +112,8 @@ nav {
 					color: #fff;
       }
       a {
+				width: 11vw;
+				height: 2vw;
         text-decoration: none;
         color: black;
         &:hover {
