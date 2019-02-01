@@ -199,7 +199,7 @@ nav {
   .about .about-text {
     color: #fff;
     margin-top: 100px;
-    font-size: 25px;
+    font-size: 1.6vw;
     line-height: 1.6;
     padding: 30px;
     text-align: center; }
@@ -208,19 +208,60 @@ nav {
   background-image: url(img/header.jpeg);
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin: auto;
   padding-top: 47px; }
   .projects div {
-    display: flex;
     align-items: center;
-    justify-content: center; }
-    .projects div img {
-      margin-top: 10vh;
-      height: 250px;
-      width: 300px;
-      cursor: pointer; }
+    justify-content: center;
+    position: relative; }
+    .projects div .projects-style {
+      height: 27vh;
+      width: 33vh;
+      position: relative;
+      margin-bottom: 14vh;
+      margin-right: 0; }
+      .projects div .projects-style .projects-position {
+        background-size: 27vh 33vh;
+        top: 50%;
+        left: 50%;
+        height: 27vh;
+        width: 33vh;
+        position: absolute;
+        transition: all 0.5s ease;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto; }
+        .projects div .projects-style .projects-position:hover {
+          background-image: linear-gradient(rgba(5, 17, 108, 0.6), rgba(5, 17, 108, 0.6));
+          transform: scale(1.2); }
+          .projects div .projects-style .projects-position:hover .overlay {
+            visibility: visible; }
+      .projects div .projects-style .game {
+        background-image: url("img/vanilla-js.png"); }
+      .projects div .projects-style .country {
+        background-image: url("img/countrySearch.png"); }
+      .projects div .projects-style .quote {
+        background-image: url("img/randommachine.png"); }
+      .projects div .projects-style .gif {
+        background-image: url("img/gifSearch.png"); }
+      .projects div .projects-style .kanban {
+        background-image: url("img/kanban.png"); }
+      .projects div .projects-style .bootstrap {
+        background-image: url("img/bootstrap.png"); }
+      .projects div .projects-style .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.3vw;
+        text-align: center;
+        visibility: hidden;
+        cursor: pointer; }
+        .projects div .projects-style .overlay a {
+          text-decoration: none;
+          color: #fff; }
 
 .contact {
   background-image: url(img/header.jpeg);
@@ -251,15 +292,15 @@ nav {
           animation-play-state: running; }
 
 @media (max-width: 767px) {
-  nav {
-    height: auto; }
-    nav ul {
-      float: none; }
-      nav ul li {
-        display: block; }
-        nav ul li a {
-          display: block;
-          height: auto;
-          text-align: center; } }
+  nav ul li {
+    float: left; }
+
+  .about div {
+    height: 50%; }
+    .about div .about-text {
+      font-size: 2.4vw; }
+
+  .contact div {
+    height: 25%; } }
 
 /*# sourceMappingURL=index.css.map */

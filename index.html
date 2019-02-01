@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <title>Portfolio Damian Godek</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
-  </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/tippy.js@3/dist/tippy.all.min.js"></script>
   <script src="jquery.scrollify.js"></script>
   <script>
         $(function() {
           $.scrollify({
-            section : ".example-classname",
+            section : ".page-wrap",
             updateHash: true,
             scrollSpeed: 600,
             touchScroll: false
@@ -34,15 +34,15 @@
         </ul>
       </nav>
     </header>
-        <section id="S1" class="main example-classname">
+        <section id="S1" class="main page-wrap">
           <div class="slogan">
             <p>Cześć,<br>Nazywam się Damian Godek</p>
             <button><a href="#S3">Moje projekty</a></button>
           </section>
         </div>
-        <section id="S2" class="about row example-classname">
-          <div class="col-6">FOTO</div>
-          <div class="col-6">
+        <section id="S2" class="about row page-wrap">
+          <div class="col-6 col-s-12">FOTO</div>
+          <div class="col-6 col-s-12">
             <p class="about-text">
               Nazywam się Damian. Mam 23 lata i na codzień mieszkam we Wrocławiu.
               Swoją przygodę z programowaniem zacząłem w czerwcu 2018 roku.
@@ -57,23 +57,82 @@
             </p>
           </div>
         </section>
-        <section id="S3" class="projects example-classname">
+        <section id="S3" class="projects page-wrap">
           <div class="row">
-            <div class="col-4 col-s-6"><a target="_blank" href="https://godziu.github.io/rock-paper-scissors/"><img src="img/vanilla-js.png" alt="rock-paper-scissors"></a></div>
-            <div class="col-4 col-s-6"><a target="_blank" href="https://godziu.github.io/zadanie-12.3/"><img src="img/countrySearch.png" alt="search-engine"></a></div>
-            <div class="col-4 col-s-6"><a target="_blank" href="https://godziu.github.io/randomQuoteMachine/"><img src="img/randommachine.png" alt="random-quote"></a></div>
+          <div class="col-s-6">
+            <div class="col-4 col-s-12">
+              <div class="projects-style">
+                <div class="game projects-position">
+                  <div class="overlay">
+                    <a target="_blank" href="https://godziu.github.io/rock-paper-scissors/">Rock-paper-scissors</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="row">
-            <div class="col-4 col-s-6"><a target="_blank" href="https://godziu.github.io/react_gifSearch/"><img src="img/gifSearch.png" alt="gif-search"></a></div>
-            <div class="col-4 col-s-6"><a target="_blank" href="https://godziu.github.io/zadanie-11.3/"><img src="img/kanban.png" alt="kanban"></a></div>
-            <div class="col-4 col-s-6"><a target="_blank" href="https://godziu.github.io/bootstrap/"><img src="img/bootstrap.png" alt="bootstrap"></a></div>
+          <div class="col-s-6">
+            <div class="col-4 col-s-6">
+              <div class="projects-style">
+                <div class="country projects-position">
+                  <div class="overlay">
+                    <a target="_blank" href="https://godziu.github.io/zadanie-12.3/">Country search engine</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-4 col-s-6">
+              <div class="projects-style">
+                <div class="quote projects-position">
+                  <div class="overlay">
+                    <a target="_blank" href="https://godziu.github.io/randomQuoteMachine/">Random quote engine</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-4 col-s-6">
+                <div class="projects-style">
+                  <div class="gif projects-position">
+                    <div class="overlay">
+                      <a target="_blank" href="https://godziu.github.io/react_gifSearch/">Gif search engine</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-s-6">
+                <div class="projects-style">
+                  <div class="kanban projects-position">
+                    <div class="overlay">
+                      <a target="_blank" href="https://godziu.github.io/zadanie-11.3/">Kanban board</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-s-6">
+                <div class="projects-style">
+                  <div class="bootstrap projects-position">
+                    <div class="overlay">
+                      <a target="_blank" href="https://godziu.github.io/bootstrap/">Bootstrap</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
         </section>
         <section id="S4" class="contact example-classname">
-          <div class="col-3 col-s-12"><a target="_blank" href="https://www.facebook.com/damian.godek.16"><i class="fab fa-facebook animated infinite tada delay-0s"></i></a></div>
-          <div class="col-3 col-s-12"><a target="_blank" href="https://github.com/godziu"><i class="fab fa-github animated infinite tada delay-0s"></i></a></div>
-          <div class="col-3 col-s-12"><a target="_blank" href="mailto:damian.godek1@gmail.com"><i class="fas fa-at animated infinite tada delay-0s"></i></a></div>
-          <div class="col-3 col-s-12"><a target="_blank" href="https://www.facebook.com/damian.godek.16"><i class="fab fa-linkedin-in animated infinite tada delay-0s"></i></a></div>
+          <div class="col-3 col-s-12"><a target="_blank" href="https://www.facebook.com/damian.godek.16"><i data-tippy="facebook" class="fab fa-facebook animated infinite tada delay-0s"></i></a></div>
+          <div class="col-3 col-s-12"><a target="_blank" href="https://github.com/godziu"><i data-tippy="github" class="fab fa-github animated infinite tada delay-0s"></i></a></div>
+          <div class="col-3 col-s-12"><a target="_blank" href="mailto:damian.godek1@gmail.com"><i data-tippy="e-mail" class="fas fa-at animated infinite tada delay-0s"></i></a></div>
+          <div class="col-3 col-s-12"><a target="_blank" href="https://www.facebook.com/damian.godek.16"><i data-tippy="linkedin" class="fab fa-linkedin-in animated infinite tada delay-0s"></i></a></div>
         </section>
+  <script>
+    tippy.setDefaults({
+      arrow: true,
+      delay: 40,
+      theme: 'my-tippy',
+    })
+  </script>
   </body>
 </html>
