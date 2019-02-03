@@ -178,20 +178,15 @@ nav {
 	div {
 		align-items: center;
 		justify-content: center;
-		position: relative;
+		display: flex;
 		.projects-style {
-			height: 27vh;
-			width: 33vh;
-			position: relative;
-			margin-bottom: 14vh;
+			margin-top: 14vh;
 			margin-right: 0;
+			max-width: 50%;
 			.projects-position {
 				background-size: 27vh 33vh;
-				top: 50%;
-				left: 50%;
 				height: 27vh;
 				width: 33vh;
-				position: absolute;
 				transition: all 0.5s ease;
 				background-position: center;
 				background-size: cover;
