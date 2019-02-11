@@ -352,6 +352,9 @@ nav {
     width: 24vw;
     font-size: 3vw; }
 
+  .about div .photo img {
+    margin: 0 auto; }
+
   .projects div .projects-style {
     max-width: none;
     margin-top: 40px; }
